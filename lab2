@@ -1,0 +1,30 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class changeIcon
+{
+    public static void main(String[] args)
+    {
+        JFrame frame = new JFrame();
+
+        final int FIELD_WIDTH = 300;
+        final JTextField textField = new JTextField(FIELD_WIDTH);
+
+        JButton blueButton = new JButton("RED");
+        JButton redButton = new JButton("BLUE");
+        JButton greenButton = new JButton("GREEN");
+
+
+
+        frame.setLayout(new FlowLayout());
+
+        frame.add(redButton);
+        frame.add(greenButton);
+        frame.add(blueButton);
+
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+    }
+}
