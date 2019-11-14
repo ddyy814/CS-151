@@ -2,8 +2,8 @@
 public class hw4Q1a {
     public static void main(String[] args) {
         SharedAccount sharedAccount = new SharedAccount();
-        int time = 10;
-        int money = 10;
+        int time = 15;
+        int money = 50;
 
         // the first customer deposit
         Customer c1 = new Customer(sharedAccount, Customer.TYPE_DEPOSIT, time,money);
